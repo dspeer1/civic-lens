@@ -104,9 +104,43 @@ body.dark-mode {
 /* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Layout Styles */
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+header, footer{
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+}
+
+body{
+  background-color: var(--watchdog-white);
+}
 
 /* ///ADD/// Global Text Styles */
+h1{
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
 
+.tagline{
+  font-family: var(--font-heading);
+}
+
+h2{
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+}
+
+h3{
+  font-family: var(--font-heading);
+  font-size: 1rem;
+}
+
+p{
+  font-family: var(--font-body);
+}
 
 /* ///ADD/// medium styles 620px */
 
