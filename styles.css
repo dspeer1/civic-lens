@@ -102,8 +102,38 @@ body.dark-mode {
 }
 
 /* ///ADD/// Navigation Styles */
+.mobile-nav a{
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+}
+
+.mobile-nav a:hover{
+  background-color: var(--blue-bulletin);
+}
+
+.menu-button{
+  display: inline-block;
+  background-color: var(--news-flash);
+  cursor: pointer;
+}
+
+.menu-button:hover{
+  background-color: var(--blue-bulletin);
+}
+
+.menu{
+  display: none;
+}
+
+input:checked ~ .menu{
+  display: block;
+}
 
 /* ///ADD/// Global Layout Styles */
+header, nav, main, footer{
+  padding: 1rem;
+}
+
 body{
   display: grid;
   grid-template-columns: 1fr;
