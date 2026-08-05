@@ -184,8 +184,14 @@ main{
   background-color: var(--watchdog-white);
 }
 
-.news{
-  
+#breaking-news section{
+  box-shadow: var(--shadow);
+  border: 1px solid var(--truth-text);
+  margin: 0 auto 0.5rem auto;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  font-weight: 350;
+  padding: 1rem;
 }
 
 
@@ -194,6 +200,9 @@ main{
 /* ///ADD/// Global Text Styles */
 body{
   line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1{
@@ -234,16 +243,13 @@ h3{
   font-size: 1.25rem;
 }
 
-
-#breaking-news h3, #breaking-news p{
-  background-color: var(--news-flash);
+#breaking-news h3{
+  border-bottom: 1px solid var(--watchdog-white);
   color: var(--watchdog-white);
-  font-weight: 400;
-  padding: 1rem;
 }
 
 #breaking-news p{
-  border-top: 1px solid var(--watchdog-white);
+  margin-top: 0.5rem;
 }
 
 p{
