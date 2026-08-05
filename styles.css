@@ -103,7 +103,15 @@ body.dark-mode {
 
 /* ///ADD/// Navigation Styles */
 
+.mobile-nav{
+  display: grid;
+  width: 100%;
+}
+
 .mobile-nav a{
+  display: block;
+  padding: 1rem;
+  margin-right: 1rem;
   background-color: var(--news-flash);
   color: var(--watchdog-white);
 }
@@ -113,7 +121,9 @@ body.dark-mode {
 }
 
 .menu-button{
-  display: inline-block;
+  display: block;
+  padding: 1rem;
+  margin-right: 1rem;
   background-color: var(--news-flash);
   cursor: pointer;
 }
@@ -122,16 +132,29 @@ body.dark-mode {
   background-color: var(--blue-bulletin);
 }
 
-.menu{
-  display: none;
-}
-
-input:checked ~ .menu{
-  display: block;
-}
 
 /* ///ADD/// Global Layout Styles */
-header, nav, main, footer{
+body{
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+}
+
+header, main, footer{
   padding: 1rem;
 }
 
@@ -140,15 +163,10 @@ header, footer{
   color: var(--watchdog-white);
 }
 
-body{
+main{
   background-color: var(--watchdog-white);
 }
 
-#breaking-news{
-  display: grid;
-  grid-template-rows: 1fr;
-  box-shadow: var(--shadow);
-}
 
 /* ///ADD/// Global Text Styles */
 h1{
@@ -174,6 +192,19 @@ p{
   font-family: var(--font-body);
 }
 
+nav{
+  text-transform: uppercase;
+}
+
+.mobile-nav a{
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-button{
+  text-align: center;
+}
+
 /* ///ADD/// medium styles 620px */
 
 
@@ -188,5 +219,5 @@ p{
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-
+  body:has(#menu-toggle:checked) 
 }
