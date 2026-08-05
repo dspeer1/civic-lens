@@ -111,7 +111,7 @@ body.dark-mode {
 
 .mobile-nav a{
   display: block;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-right: 1rem;
   background-color: var(--news-flash);
   color: var(--watchdog-white);
@@ -125,7 +125,7 @@ body.dark-mode {
 
 .menu-button{
   display: block;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-right: 1rem;
   background-color: var(--news-flash);
   text-align: center;
@@ -184,11 +184,11 @@ main{
   background-color: var(--watchdog-white);
 }
 
-#breaking-news{
-  display: grid;
-  background-color: var(--news-flash);
-  box-shadow: var(--shadow);
+.news{
+  
 }
+
+
 
 
 /* ///ADD/// Global Text Styles */
@@ -234,8 +234,16 @@ h3{
   font-size: 1.25rem;
 }
 
+
 #breaking-news h3, #breaking-news p{
+  background-color: var(--news-flash);
   color: var(--watchdog-white);
+  font-weight: 400;
+  padding: 1rem;
+}
+
+#breaking-news p{
+  border-top: 1px solid var(--watchdog-white);
 }
 
 p{
