@@ -552,6 +552,13 @@ footer small{
   }
 }
 
+@media (prefers-reduced-motion: reduce){
+  body{
+    transition: none;
+    animation: none;
+  }
+}
+
 
 
 
