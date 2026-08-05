@@ -184,6 +184,12 @@ main{
   background-color: var(--watchdog-white);
 }
 
+#breaking-news{
+  display: grid;
+  background-color: var(--news-flash);
+  box-shadow: var(--shadow);
+}
+
 
 /* ///ADD/// Global Text Styles */
 body{
@@ -226,6 +232,10 @@ h3{
   color: var(--truth-text);
   font-family: var(--font-heading);
   font-size: 1.25rem;
+}
+
+#breaking-news h3, #breaking-news p{
+  color: var(--watchdog-white);
 }
 
 p{
